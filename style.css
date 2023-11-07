@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+#butonlar {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+}
+
+button:active {
+    transform: translateY(3px);
+}
+#textcontainer {
+    margin: auto;
+    margin-top: 50px;
+    height:fit-content;
+    width: 600px;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+}
+
+#textcontainer > p {
+    text-align: justify;
+    font-size: 15px;
+}
+
+.siyahbeyaz {
+    cursor: pointer;
+    background-color: black !important;
+    color: white !important;
+}

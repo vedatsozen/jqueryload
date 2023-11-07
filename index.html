@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX PRATİĞİ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="butonlar">
+    <button class="btn1">Text 1</button>
+    <button class="btn2">Text 2</button>
+    <button class="btn3">Text 3</button>
+</div>
+
+<div id="textcontainer">
+
+</div>
+
+<script>
+
+$(document).ready(function() {
+
+$("#textcontainer").load("yazi1.txt"); 
+
+
+$(".btn1").click(function(){
+$("#textcontainer").load("yazi1.txt");
+
+})
+
+$(".btn2").click(function(){
+$("#textcontainer").load("yazi2.txt");
+})
+
+$(".btn3").click(function(){
+$("#textcontainer").load("yazi3.txt");
+})
+
+$("#textcontainer").mouseover(function() {
+$(this).addClass("siyahbeyaz");
+})
+
+$("#textcontainer").mouseleave(function() {
+$(this).removeClass("siyahbeyaz");
+})
+})
+</script>
+</body>
+</html>
